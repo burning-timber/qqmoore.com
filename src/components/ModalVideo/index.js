@@ -23,7 +23,7 @@ class VideoModal extends React.Component {
           <div className="video-btn">
               <ul>
                   <li>
-                    <button className="wrap" onClick={this.openModal}><i className="fi flaticon-play" aria-hidden="true"></i></button> 
+                    <button className="wrap" onClick={this.openModal}><span className="fi flaticon-play" aria-hidden="true"></span></button> 
                   </li>
               </ul>
           </div>

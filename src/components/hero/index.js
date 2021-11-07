@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom'
+import VideoModal from '../ModalVideo'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -24,30 +25,9 @@ class Hero extends Component {
         };
 
         return (
-            <section className={`wpo-hero-slider ${this.props.heroClass}`}>
+            <section className="static-hero">
                 <div className="hero-container">
                     <div className="hero-wrapper">
-                        <Slider {...settings}>
-                            <div className="hero-slide">
-                                <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero1})` }}>
-                                    <div className="container-fluid">
-                                        <div className="slide-content">
-                                            <div className="slide-title">
-                                                <h2>We Fight For Your Justice As Like A Friend.</h2>
-                                            </div>
-                                            <div className="slide-text">
-                                                <p>Law is commonly understood as a system of rules that are created and enforced
-                                                    through social or government.</p>
-                                            </div>
-                                            <div className="clearfix"></div>
-                                            <div className="slide-btns">
-                                                <Link to="/about" className="theme-btn">Get Started</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div className="hero-slide">
                                 <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero2})` }}>
                                     <div className="container-fluid">
@@ -60,14 +40,14 @@ class Hero extends Component {
                                                     through social or government.</p>
                                             </div>
                                             <div className="clearfix"></div>
-                                            <div className="slide-btns">
-                                                <Link to="/about" className="theme-btn">Get Started</Link>
+                                            <div data-swiper-parallax="500" className="slide-btns">
+                                                <Link to="/about" className="theme-btn">Contact us</Link>
+                                                <VideoModal />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </Slider>
                     </div>
                 </div>
             </section>

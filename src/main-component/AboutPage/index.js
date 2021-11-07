@@ -7,7 +7,6 @@ import Practice from '../../components/Practice'
 import FunFact from '../../components/FunFact'
 import Testimonial from '../../components/Testimonial'
 import Attorney from '../../components/attorneys'
-import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 import Logo from '../../images/logo.svg'
@@ -24,7 +23,6 @@ const AboutPage =() => {
             <FunFact/>
             <Attorney/>
             <Testimonial/>
-            <BlogSection/>
             <Footer/>
             <Scrollbar/>
         </Fragment>
